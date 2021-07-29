@@ -25,10 +25,6 @@ function getconfig() {
     return JSON.parse(fs.readFileSync(configpath))
 }
 
-require('electron-reload')(__dirname, {
-    ignored: /data|[/\\]\./
-})
-
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
 
