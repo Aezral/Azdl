@@ -1,0 +1,198 @@
+body {
+    background-image: linear-gradient( 140deg, white, rgb(155, 252, 255));
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+footer {
+    font-size: 18px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.titlebar {
+    -webkit-app-region: drag;
+}
+
+.buttons {
+    -webkit-app-region: no-drag;
+}
+
+
+.navbar-brand {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    border: 1px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#barraprogreso {
+    transition: all 0.4s;
+}
+
+#audioprogreso {
+    transition: all 0.4s;
+}
+#videoprogreso {
+    transition: all 0.4s;
+}
+#encodprogreso {
+    transition: all 0.4s;
+}
+#turndev {
+  transition: 250ms;
+}
+#turndev:hover {
+  transition: 250ms;
+  transform: scale(1.3) translateY(-4px);
+} 
+
+
+
+#aboutapp {
+    transition: 250ms;
+}
+#aboutapp:hover {
+    transition: 250ms;
+    transform: scale(1.3) translateY(-4px);
+}
+#restapp {
+    transition: 250ms;
+}
+
+#minapp {
+    transition: 250ms;
+}
+
+#maxiapp {
+    transition: 250ms;
+}
+
+#closeapp {
+    transition: 250ms;
+}
+#restapp:hover {
+    transform: scale(1.3) translateY(-4px);
+    transition: 250ms;
+}
+
+#minapp:hover {
+    transform: scale(1.3) translateY(-4px);
+    transition: 250ms;
+}
+
+#maxiapp:hover {
+  transform: scale(1.3) translateY(-4px);
+    transition: 250ms;
+}
+
+#closeapp:hover {
+  transform: scale(1.3) translateY(-4px);
+    transition: 250ms;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromLeft1 {
+    0% {
+      transform: translateX(-20%);
+    }
+    20% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromDown {
+    100% {
+      transform: translateY(0);
+    }
+    0%{
+      transform: translateY(100%);
+    }
+  }
+
+.card {
+    transition: 250ms;
+  }
+
+.card:hover {
+    transition: 250ms;
+    transform: translateY(-4px);
+}
+.btn {
+  transition: 250ms
+}
+.btn:hover{
+  transition: 250ms;
+    transform: scale(1.03)
+}
+
+img {
+  transition: 250ms
+}
+img:hover{ 
+  transition: 250ms;
+  transform: scale(1.03)
+}
+.colm1 {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+.colm2 {
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+#busquedayt1{
+  transition: 150ms;  
+}
+
+#busquedayt1:hover{
+  transition:150ms;
+  border: solid 2px rgb(0, 225, 255);
+  transform: scale(1.03)
+}
+
+#progressp.showing{
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}

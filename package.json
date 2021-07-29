@@ -1,0 +1,25 @@
+{
+  "name": "azdl",
+  "productName": "Azdl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "package-win": "electron-packager . Azdl --overwrite  --platform=win32 --arch=x64 --icon=src/images/logo.ico --prune=true --out=release-builds --version-string.CompanyName=Aezral --version-string.FileDescription=CE --version-string.ProductName=\"Azdl\""
+  },
+  "keywords": [],
+  "author": "Aezral",
+  "license": "ISC",
+  "dependencies": {
+    "downloads-folder": "^3.0.1",
+    "ffmpeg-static": "^4.4.0",
+    "jquery": "^3.6.0",
+    "ytdl-core": "^4.9.0"
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-packager": "^15.3.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
