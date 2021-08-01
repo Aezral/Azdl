@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Aezral" />
+    <meta name="description"
+        content="La página oficial de Azdl, una aplicación de escritorio basada en Electron para poder descargar video y audio de youtube." />
+    <meta name="author" content="" />
+    <title>Aez Downloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><img
+                        style="width: 40px; height: 40px;filter: blur(0);transform: translateZ(0);-webkit-transform: translateZ(0);"
+                        src="assets/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="update.html">Actualización</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div id="firstcontainer" class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Aez Downloader</h1>
+                            <div id="descripcion" class="lead fw-normal text-white-50 mb-4">Una aplicación de escritorio
+                                para descargar videos de
+                                youtube, con una interfaz intuitiva y amigable para los usuarios, con la tecnología de
+                                Ytdl y Ffmpeg.</div>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a class="btn btn-info btn-lg px-4 me-sm-3"
+                                    href="https://mega.nz/file/shx0FALa#Xnpz7vJwreM8lvJSVClWr1VEwx3UoqiFJ4xATiaYeAY"
+                                    target="_blank">Descarga (Windows x64)</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://github.com/Aezral/Azdl"
+                                    target="_blank">Repositorio <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divdeimagen" class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img
+                            class="img-fluid rounded-3 my-5"
+                            style="width: 500px;height: 300px;  filter: blur(0);transform: translateZ(0);-webkit-transform: translateZ(0);"
+                            src="assets/screenshot.png" alt="..." /></div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <br>
+        <div id="section1" class="mt-5">
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <h2 class="fw-bolder mb-0">Una aplicación pequeña pero grande.</h2>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="featurez col mb-5 h-100">
+                                    <div class="feature bg-info bg-gradient text-white rounded-3 mb-3"><i
+                                            class="bi bi-hand-index-thumb"></i></div>
+                                    <h2 class="h5">Descarga videos fácilmente</h2>
+                                    <p class="mb-0">Una interfaz simple, minimalista y ordenada para una descarga
+                                        sencilla.
+                                    </p>
+                                </div>
+                                <div class="featurez col mb-5 h-100">
+                                    <div class="feature bg-info bg-gradient text-white rounded-3 mb-3"><i
+                                            class="bi bi-patch-exclamation"></i></div>
+                                    <h2 class="h5">Libre de anuncios</h2>
+                                    <p class="mb-0">Siendo que Azdl no tiene fines de lucro, está completamente libre de
+                                        anuncios</p>
+                                </div>
+                                <div class="featurez col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-info bg-gradient text-white rounded-3 mb-3"><i
+                                            class="bi bi-badge-4k"></i></div>
+                                    <h2 class="h5">Formatos completos</h2>
+                                    <p class="mb-0">Contiene descargas para todos los formatos de un video, desde 144p
+                                        hasta
+                                        2160p (4k)</p>
+                                </div>
+                                <div class="featurez col h-100">
+                                    <div class="feature bg-info bg-gradient text-white rounded-3 mb-3"><i
+                                            class="bi bi-arrow-down-circle"></i></div>
+                                    <h2 class="h5">Cambia la ruta de descarga</h2>
+                                    <p class="mb-0">La aplicación te permite cambiar manualmente la ruta de descarga, o
+                                        dejar la predeterminada.</p>
+                                </div>
+                                <div class="featurez col mb-5 h-100">
+                                    <div class="feature bg-info bg-gradient text-white rounded-3 mb-3"><i
+                                            class="bi bi-code-slash"></i></div>
+                                    <h2 class="h5">Open Source</h2>
+                                    <p class="mb-0">Azdl es una aplicación de código abierto y totalmente visible para
+                                        todos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="section3">
+            <div id="importante" class="py-5  mt-5">
+                <div class="container px-5 my-5">
+                    <h1 class="text-center">Importante</h1>
+                    <p style="padding: 30px 30px 30px 30px; font-size: 20px;" class="text-center">El navegador
+                        probablemente bloquee la descarga debido a que el antivirus se lo indica, ¿Porqué pasa esto?
+                        Porque la descarga no es común o porque no tiene editor certificado, aún así, tanto Microsoft
+                        Defender o Avast Antivirus, no notifican que sea un virus después de la instalación, eso y que
+                        el código es totalmente visible por si algún programador desea analizarla, por lo que
+                        simplemente deberán elegir opciones avanzadas y conservar el archivo, Azdl es totalmente seguro
+                        y de código abierto.</p>
+                </div>
+                <div class="container mx-auto" style="width: 40%;height: 40%;">
+                    <img style="width: 100%; height: 100%;" src="assets/secure.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="reseñas" class="py-5  mt-5">
+                <div class="container px-5 my-5">
+                    <h1 class="text-center">Reseñas</h1>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-7">
+                            <div class="text-center mt-5">
+                                <div class="fs-4 mb-4 fst-italic">"Pa quiero Youtube Premium si tengo esta joya"</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3" src="assets/anonym.png" alt="..." />
+                                    <div class="fw-bold">
+                                        - Anónimo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <div class="fs-4 mb-4 fst-italic">"What is this, I don't know spanish"</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3" src="assets/anonym.png" alt="..." />
+                                    <div class="fw-bold">
+                                        - Anónimo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <div class="fs-4 mb-4 fst-italic">"Está buenísima"</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3" src="assets/anonym.png" alt="..." />
+                                    <div class="fw-bold">
+                                        - Anónimo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <div class="fs-4 mb-4 fst-italic">"Le daba un 8/10, pero después de descargar el tema de
+                                    Doom Eternal subió a 10."</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3" src="assets/anonym.png" alt="..." />
+                                    <div class="fw-bold">
+                                        - Anónimo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+
+                <div class="col-auto mx-auto">
+                    <a style="color: white;">Desarrollado por Aezral#0001</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/observer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

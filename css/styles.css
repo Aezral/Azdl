@@ -1,0 +1,89 @@
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft1 {
+  0% {
+    transform: translateX(-20%);
+  }
+  20% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromDown {
+  100% {
+    transform: translateY(0);
+  }
+  0%{
+    transform: translateY(100%);
+  }
+}
+@keyframes slideInFromUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+#features.onsee{
+  animation: 1s ease-out 0s 1 slideInFromDown;
+}
+#importante.onsee{
+  animation: 1s ease-out 0s 1 slideInFromDown;
+}
+
+#reseñas.onsee {
+  animation: 4s ease-out 0s 1 slideInFromLeft1;
+}
+
+#firstcontainer {
+  animation: 4s ease-out 0s 1 slideInFromLeft1;
+}
+.btn {
+  transition: 250ms;
+}
+.btn:hover {
+  transition: 250ms;
+  transform: translateY(-5px);
+}
+
+.featurez {
+  transition: 250ms;
+}
+.featurez:hover {
+  transition: 250ms;
+  transform: translateY(-10px);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #000000 !important;
+  border: 0px
+}
